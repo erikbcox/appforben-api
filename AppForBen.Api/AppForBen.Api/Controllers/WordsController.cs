@@ -15,6 +15,12 @@ namespace AppForBen.Api.Controllers
         public WordsController()
         {
             _wordLists = new List<IWordList>();
+            _wordLists.Add(GenerateWordList(100, "shapes", "square", "circle", "triangle", "diamond", "cylinder","cone", "sphere", "box", "oval","rectangle","star"));
+            _wordLists.Add(GenerateWordList(100, "colors", "green", "blue", "red", "brown", "black", "white", "pink", "yellow", "grey", "aqua", "purple", "magenta", "tan"));
+            _wordLists.Add(GenerateWordList(100, "animals", "dog", "cat", "moose", "cow", "pig", "duck", "goose", "chicken", "rooster", "frog", "turtle", "rhino", "elephant","lion","alligator","bird", "monkey"));
+
+
+
             _wordLists.Add(GenerateWordList(100, "my new list", "look","Alex","book","pants","world","list","in","what", "moon","will","box","why","big","space"));
             _wordLists.Add(GenerateWordList(100, "Ben's added April 18", "the", "at", "could", "it", "am", "we", "mom", "get", "my", "got", "set"));
             _wordLists.Add(GenerateWordList(100, "Group 1", "am", "do", "look", "an", "for", "me"));
